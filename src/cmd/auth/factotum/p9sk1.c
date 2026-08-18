@@ -535,7 +535,7 @@ Proto p9sk1 = {
 Proto dp9ik = {
 	"dp9ik",
 	p9sk1roles,
-	"user? dom? !password?",
+	"user? dom?",		/* !hex is also accepted; p9skcheck validates */
 	p9skcheck,
 	p9skclose
 };
